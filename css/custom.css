@@ -137,6 +137,31 @@ h3.sectionTitle {
 	color: #fff;
 	margin-bottom: 0;
 }
+.jumbotron1 {
+	background: url(../assets/img/background2.jpg) no-repeat center center scroll; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-bottom: 0;
+    padding-top: 600px;
+	color: #fff;
+	margin-bottom: 90;
+}
+
+
+.jumbotron2 {
+	background: url(../assets/img/background2.jpg) no-repeat center center scroll; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-bottom: 0;
+    padding-top: 600px;
+	color: #fff;
+	margin-bottom: 90;
+}
+
 .jumbotron .mobile {
 	background-image: url("../assets/img/image2.jpg");
     background-repeat: no-repeat;
