@@ -150,18 +150,6 @@ h3.sectionTitle {
 }
 
 
-.jumbotron2 {
-	background: url(../assets/img/background2.jpg) no-repeat center center scroll; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	padding-bottom: 0;
-    padding-top: 600px;
-	color: #fff;
-	margin-bottom: 90;
-}
-
 .jumbotron .mobile {
 	background-image: url("../assets/img/image2.jpg");
     background-repeat: no-repeat;
@@ -170,8 +158,7 @@ h3.sectionTitle {
     margin-top: 0;
     overflow: hidden;
     width: auto;
-}
-.jumbotron h1 {
+}.jumbotron h1 {
 	color: #fff;
     font-size: 72px;
     font-weight: 700;
@@ -234,7 +221,7 @@ h3.sectionTitle {
     cursor: default;
 }
 #featureWrap h3 {
-	font-weight: 700;
+	font-weight: 1700;
 }
 
 /**********************************************************************/
@@ -476,6 +463,9 @@ footer .social a .fa-inverse {
 		padding-top: 100px;
 	}
 	.jumbotron .jumboText {
+		text-align: center;
+	}
+	.jumbotron .jumboText1 {
 		text-align: center;
 	}
 	.jumbotron h1 {
