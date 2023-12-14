@@ -1,0 +1,7 @@
+# site.yml
+---
+- hosts: 127.0.0.1
+  become: true
+  roles:
+    - nginx
+
