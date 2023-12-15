@@ -1,22 +1,27 @@
-# deployment.yaml
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-world-app
+  name: nginx-deployment
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
-      app: hello-world-app
+      app: nginx
   template:
     metadata:
       labels:
-        app: hello-world-app
+        app: nginx
     spec:
       containers:
-      - name: hello-world-app
-        image: ansible-runner:v2
+      - name: nginx
+        image: nginx:1.19.10  # Use the specific version you want
+        command: [ "/bin/bash", "-c", "--" ]
+        args: [ "while true; do sleep 30; done;" ]
         ports:
-        - containerPort: 5000
+        - containerPort: 80
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
 

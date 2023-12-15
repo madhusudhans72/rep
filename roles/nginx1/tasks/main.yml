@@ -1,0 +1,25 @@
+---
+- name: Create Nginx Deployment
+  community.kubernetes.k8s:
+    state: present
+    definition:
+      apiVersion: apps/v1
+      kind: Deployment
+      metadata:
+        name: nginx-deployment
+      spec:
+        replicas: 1
+        selector:
+          matchLabels:
+            app: nginx
+        template:
+          metadata:
+            labels:
+              app: nginx
+          spec:
+            containers:
+            - name: nginx-container
+              image: nginx:latest
+              ports:
+              - containerPort: 80
+

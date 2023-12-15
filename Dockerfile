@@ -12,7 +12,7 @@ RUN set -x && \
 
 # Install Ansible
 RUN pip3 install ansible
-
+RUN pip3 install flask
 # Stage 2: Runtime stage
 FROM python:3.8
 
@@ -30,4 +30,3 @@ WORKDIR /ansible
 CMD ["ansible-playbook", "nginx_deployment.yaml"]
 
 CMD ["python3", "hello.py"]
-CMD ["tail", "-f", "/dev/null"]
